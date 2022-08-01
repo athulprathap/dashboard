@@ -38,14 +38,6 @@ figure.update_layout(
     font_color=colors['text']
 )
 
-layout = html.Div([
-    dcc.Loading([
-        # ...
-    ])
-])
-
-
-
 
 layout = html.Div(
     style={'backgroundColor': colors['background']}, 

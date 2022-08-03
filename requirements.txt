@@ -7,3 +7,4 @@ descartes
 seaborn
 xlrd
 matplotlib
+numpy

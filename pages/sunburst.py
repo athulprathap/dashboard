@@ -18,7 +18,7 @@ colors = {
     'text': '#000000'
 }
 
-data = pd.read_csv("Data/ReelRo_Data.csv")
+data = pd.read_csv("dashboard/Data/ReelRo_Data.csv")
 fig = px.sunburst(data, path=['Category', 'Gender', 'Language'], values='Time most users are viewing',
     color_discrete_sequence=px.colors.qualitative.Set3,)
                   

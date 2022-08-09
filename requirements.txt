@@ -2,8 +2,6 @@ dash
 plotly.express
 pandas
 dash_bootstrap_components
-geopandas
-descartes
 seaborn
 xlrd
 matplotlib

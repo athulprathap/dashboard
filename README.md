@@ -65,6 +65,7 @@ The following tools were used in this project:
 ## :white_check_mark: Requirements ##
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Python](https://nodejs.org/en/) installed.
+Make sure that when you're shifting to a new git branch you are cd'd in dashboard and not the main Reelro directory.
 
 ## :checkered_flag: Starting ##
 

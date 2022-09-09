@@ -5,4 +5,4 @@ dash_bootstrap_components
 seaborn
 xlrd
 matplotlib
-numpy
+dash_bootstrap_components

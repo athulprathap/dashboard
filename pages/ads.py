@@ -18,13 +18,13 @@ colors = {
     'text': '#000000'
 }
 
-data = pd.read_csv("Data/ReelRo_Data.csv")
-fig = px.sunburst(data, path=['Category', 'Gender', 'Language'], values='Time most users are viewing',
+data = pd.read_csv("Data/ad.csv")
+fig = px.sunburst(data, path=['ad_id', 'Gender', 'Language'], values='Time most users are viewing',
     color_discrete_sequence=px.colors.qualitative.Set3,)
                   
 fig.update_layout(margin=dict(t=10, b=10, r=10, l=10))
 
-figure = px.sunburst(data, path=['Location', 'Age_Group', 'Gender'], values='Time most users are viewing',color_discrete_sequence=px.colors.qualitative.T10)
+figure = px.sunburst(data, path=['ad_id','Gender','Age_Group'], values='Time most users are viewing',color_discrete_sequence=px.colors.qualitative.T10)
 figure.update_layout(margin=dict(t=10, b=10, r=10, l=10))
 
 fig.update_layout(
@@ -116,7 +116,7 @@ children=[
     dbc.Row([
         dbc.Col([
              html.H1(
-        children='User Interaction',
+        children='Add Most users are viewing',
         style={
             'textAlign': 'center',
             'color': colors['text']
@@ -126,7 +126,7 @@ children=[
         ]),
         dbc.Col([
          html.H1(
-        children='User Demographics',
+        children='Ad Viewed based on Age Group',
         style={
             'textAlign': 'center',
             'color': colors['text']

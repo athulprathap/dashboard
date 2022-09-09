@@ -70,7 +70,7 @@ layout = html.Div(children=[
     html.Div(children='''
        '''),
     dcc.Graph(
-        id='india-map',
+        id='india-map-1',
         figure=fig,
         responsive=True
     )

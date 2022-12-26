@@ -6,3 +6,7 @@ seaborn
 xlrd
 matplotlib
 dash_bootstrap_components
+gunicorn==20.0.4
+psycopg2-binary
+python-dotenv
+dash-auth

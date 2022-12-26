@@ -6,8 +6,31 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 import pandas as pd
 import dash
-
+import os
+import dash
+from dash import dcc
+import dash_html_components as html
+import plotly.graph_objects as go
+import dash_html_components as html
+import dash_bootstrap_components as dbc
+from dotenv import load_dotenv
+import os
+import psycopg2
+from dash.dependencies import Output, Input
+import dash_core_components as dcc
+from dash.exceptions import PreventUpdate
+from dash_auth import BasicAuth
+import dash_auth
 app = Dash(__name__, external_stylesheets=[dbc.themes.LUX], use_pages=True)
+
+load_dotenv()
+VALID_USERNAME_PASSWORD_PAIRS = {
+    'admin@reelro.com': 'admin'
+}
+auth = dash_auth.BasicAuth(
+    app,
+    VALID_USERNAME_PASSWORD_PAIRS
+)
 
 app.layout = html.Div([
     # add a navbar
@@ -43,4 +66,4 @@ app.layout = html.Div([
 
 
 if __name__ == '__main__':
-	app.run_server(debug=True)
+	app.run_server(host='127.0.0.1', port=8050)
